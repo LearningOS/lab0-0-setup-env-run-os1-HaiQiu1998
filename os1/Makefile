@@ -32,7 +32,7 @@ clean:
 	@cargo clean
 
 run: build
-	@qemu-system-riscv64 \
+	@/home/zhoushuai/Desktop/qemu-7.0.0/build/qemu-system-riscv64 \
 		-machine virt \
 		-nographic \
 		-bios $(BOOTLOADER) \
